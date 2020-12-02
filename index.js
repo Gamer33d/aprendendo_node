@@ -20,8 +20,12 @@ const handlebars = require('express-handlebars');
 //Rotas
     app.get('/cad', function(req, res){
         res.render('formulario')
-        
+
     });
+
+    app.post('/add', function(req, res){
+        res.send('form recebido, fique tranquilo :)')
+    })
 
 app.listen(5000, function(){
     console.log('Servidor iniciado endereço: http://localhost:5000');
